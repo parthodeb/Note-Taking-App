@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Note-Taking App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+</head>
+<body>
+  <div class="app">
+    <h1 class="text-3xl mb-5 font-bold text-red-500 font-[monospace]">My Notes</h1>
+
+    <div class="top-bar">
+      <input type="text" id="searchInput" placeholder="Search notes..." />
+      <button id="toggleTheme">Toggle Theme</button>
+    </div>
+
+    <button class="add-btn text-3xl mb-5 font-bold bg-green-100 p-4 border rounded-xl" id="addNoteBtn">+ <span class="text-sm font-normal">Click here to add a note</span></button>
+    <div class="notes-container flex gap-10 flex-wrap" id="notesContainer"></div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
